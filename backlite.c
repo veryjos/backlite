@@ -64,6 +64,11 @@ int main(int argc, char* argv[]) {
 	if (operation == '+' || operation == '-') {
 		// Operation is prefixed, so skip the first character
 		param++;
+
+		// Check if the string actually has anything past the operation
+		if (*param == '\0') {
+			return usage(argv[0]);
+		}
 	} else {
 		// Not using an operation, so just set it to 0
 		operation = 0;
