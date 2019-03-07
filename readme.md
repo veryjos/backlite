@@ -20,5 +20,3 @@ sudo backlite $(find /sys/devices | grep intel_backlight$) 50;  # Sets the backl
 sudo backlite $(find /sys/devices | grep intel_backlight$) +10; # Increments the backlight by 10%
 sudo backlite $(find /sys/devices | grep intel_backlight$) -10; # Decrements the backlight by 10%
 ```
-
-Made because xbacklight is broken when used with the Ubuntu Intel modesetting video drivers.
