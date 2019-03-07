@@ -77,8 +77,7 @@ int main(int argc, char* argv[]) {
 	// Check that param is all numbers
 	c = param;
 	while (*c != 0) {
-		// 48 = '0' in ascii, 57 = '9' in ascii
-		if (*c < 48 || *c > 57)
+		if (*c < '0' || *c > '9')
 			return usage(argv[0]);
 
 		++c;
