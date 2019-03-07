@@ -4,14 +4,12 @@ Simple program to change the brightness of "intel_backlight" driven monitors on 
 
 ### Building:
 ```
-cmake .
-make
-sudo make install
+gcc backlite.c -o backlite
 ```
 
 ### Usage:
 ```
-backlite device_path [+-]brightness
+./backlite device_path [+-]brightness
 # where:
 #  device_path is a path to your intel_backlight device path
 #  brightness is the desired brightness expressed as a percentage
